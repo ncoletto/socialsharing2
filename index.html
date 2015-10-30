@@ -32,5 +32,9 @@
 <button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook', null, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook (with errcallback)</button>
 </div>
 
+
+<button onclick="window.plugins.socialsharing.shareViaSMS('Mensaje SMS', '1161792834', function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})">share via SMS</button>
+
+
 </body>
 </html>
